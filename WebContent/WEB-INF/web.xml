@@ -1,12 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
-  <display-name>JSP &amp; Servlets</display-name>
-  <servlet>
-    <servlet-name>add</servlet-name>
-    <servlet-class>com.demoservlet.AddServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>add</servlet-name>
-    <url-pattern>/add</url-pattern>
-  </servlet-mapping>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>JSP &amp; Servlets</display-name>
+	<servlet>
+		<servlet-name>add</servlet-name>
+		<servlet-class>com.demoservlet.AddServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>add</servlet-name>
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>doGet</servlet-name>
+		<servlet-class>com.demoservlet.DoGetServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>doGet</servlet-name>
+		<url-pattern>/doGet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>doPost</servlet-name>
+		<servlet-class>com.demoservlet.DoPostServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>doPost</servlet-name>
+		<url-pattern>/doPost</url-pattern>
+	</servlet-mapping>
 </web-app>
